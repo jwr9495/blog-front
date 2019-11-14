@@ -13,10 +13,9 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <Header />
-      <Home />
       <Route exact path="/" component={Home} />
       <Route path="/login" component={Login} />
-      <Route path="/post" component={Post} />
+      <Route path="/post/:id" component={Post} />
       <Footer />
     </BrowserRouter>
   );
