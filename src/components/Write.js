@@ -36,7 +36,7 @@ export default function Write({ history }) {
   };
 
   const submit = async () => {
-    const { data } = await authAxios.post(
+    const { data } = await authAxios().post(
       `${baseURL}/api/post`,
       {
         title,
